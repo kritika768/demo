@@ -1,0 +1,73 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color:#FFFFFF;
+    color: black;
+  }
+  
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+  }
+  
+  nav li {
+    font-weight: 400;
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+  }
+  .auth-buttons{
+    display: flex;
+    gap: 10px;
+  }
+  .signup {
+    padding: 10px 20px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    background-color: #FF645C;
+    color:#FFFFFF;
+    width: 91px;
+    height: 40px;
+    border-radius: 6px;
+  }
+  .login{
+    padding: 10px 20px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    color:#FF645C;
+    width: 91px;
+    height: 40px;
+    border-radius: 6px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    nav li {
+      font-size: 14px;
+    }
+  
+    .auth-buttons button {
+      padding: 8px 16px;
+      font-size: 14px;
+      width: auto;
+      height: auto;
+    }
+  }

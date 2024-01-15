@@ -1,0 +1,82 @@
+.box{
+  background: var(--Neutral-Silver, #F5F7FA);
+}
+.container {
+  display: flex;
+  padding: 50px 100px;
+  align-items: center;
+  gap: 104px;
+  align-self: stretch;
+}
+.frame {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  flex: 1 0 0;
+  width: 100%;
+}
+.cont {
+  align-self: stretch;
+}
+.lessons {
+  display: flex;
+  flex-direction: column;
+}
+
+.spn {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.btn {
+  display: flex;
+  padding: 14px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  background: #ff645c;
+  border: none;
+  color: whitesmoke;
+}
+
+.image {
+  height: 407px;
+  position: relative;
+  width: 391px;
+}
+
+.svgs {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  .frame {
+    gap: 12px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 7px 16px;
+  }
+  .spn {
+    font-size: 24px;
+  }
+ .image {
+    height: 100%;
+    width: 100%;
+  }
+}
